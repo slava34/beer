@@ -50,12 +50,10 @@ export default {
     async getRandomBeer() {
       const { data } = await axios.get('https://random-data-api.com/api/beer/random_beer');
       this.beer = data;
-      console.log(this.beer);
     },
     async getRandomUser() {
       const { data } = await axios.get('https://random-data-api.com/api/users/random_user');
       this.user = data;
-      console.log(this.user);
     }
   },
   created() {
